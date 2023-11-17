@@ -1,0 +1,1024 @@
+;****************************************************************************************
+;   Copyright (c) 2019, MediaTek Technology Corp., All Rights Reserved
+;   All Rights Reserved.
+;   Developed by MediaTek Technology, Corp. -- http://www.mediatek.com
+;****************************************************************************************
+
+[Version]
+Signature           = "$Windows NT$"
+Class               = Bluetooth
+CLASSGUID           = {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+Provider            = %ProviderName%
+DriverVer           = 08/11/2023,1.1036.0.368
+CatalogFile         = mtkbtfilter.cat
+CatalogFile.NTamd64 = mtkbtfilterx.cat
+PnpLockDown         = 1
+
+;****************************************************************************************
+[Manufacturer]
+%MTK%=MTK,NTx86, NTamd64
+
+;****************************************************************************************
+[MTK.NTx86]
+; DisplayName                   Section                     DeviceID
+; -----------                   -------                     --------
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7961&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7900&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7920&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7922&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7902&MI_00
+%Generic.DeviceDescRZ608ES%     = MTKBT_T0_2,               USB\VID_0E8D&PID_A608&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_T0_2,               USB\VID_0E8D&PID_0608&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_T0_2,               USB\VID_0E8D&PID_C608&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_0616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_C616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_D616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_3,               USB\VID_0E8D&PID_E616&MI_00
+%Generic.DeviceDescExA%         = MTKBT_A1_1,               USB\VID_04CA&PID_3802&MI_00
+%Generic.DeviceDescExA%         = MTKBT_A1_1,               USB\VID_13D3&PID_3606&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_04CA&PID_3804&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_A1_1,               USB\VID_0489&PID_E0E4&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_04CA&PID_3806&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_13D3&PID_3594&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_A1_2,               USB\VID_0489&PID_E102&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_2,               USB\VID_04CA&PID_38E4&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_2,               USB\VID_13D3&PID_3605&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3563&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3578&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3579&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3596&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_15A9&PID_0047&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3568&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3569&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_13D3&PID_3575&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_13D3&PID_3584&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3585&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_0489&PID_E0E2&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_0489&PID_E0F5&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_0489&PID_E0F6&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_1,               USB\VID_13D3&PID_3583&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_2,               USB\VID_13D3&PID_3580&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_2,               USB\VID_13D3&PID_3597&MI_00
+%Generic.DeviceDesc%            = MTKBT_D1_1,               USB\VID_0489&PID_E0C8&MI_00
+%Generic.DeviceDesc%            = MTKBT_D1_1,               USB\VID_0489&PID_E0F1&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_H1_1,               USB\VID_0489&PID_E0E6&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_0E8D&PID_1EDE&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_13D3&PID_3567&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_0489&PID_E0E0&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0489&PID_E0F2&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0E8D&PID_223C&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0489&PID_E10B&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_13D3&PID_3576&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_H3_1,               USB\VID_0489&PID_E0E5&MI_00
+%Generic.DeviceDesc%            = MTKBT_L1_1,               USB\VID_04CA&PID_3812&MI_00
+%Generic.DeviceDesc%            = MTKBT_L1_1,               USB\VID_0489&PID_E0CD&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D7&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D8&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D9&MI_00
+%Generic.DeviceDesc%            = MTKBT_X1_1,               USB\VID_13D3&PID_3564&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_1435&PID_7902&MI_00
+
+[MTK.NTamd64]
+; DisplayName                   Section                     DeviceID
+; -----------                   -------                     --------
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7961&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7900&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7920&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7922&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_0E8D&PID_7902&MI_00
+%Generic.DeviceDescRZ608ES%     = MTKBT_T0_2,               USB\VID_0E8D&PID_A608&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_T0_2,               USB\VID_0E8D&PID_0608&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_T0_2,               USB\VID_0E8D&PID_C608&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_0616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_C616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_2,               USB\VID_0E8D&PID_D616&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_T0_3,               USB\VID_0E8D&PID_E616&MI_00
+%Generic.DeviceDescExA%         = MTKBT_A1_1,               USB\VID_04CA&PID_3802&MI_00
+%Generic.DeviceDescExA%         = MTKBT_A1_1,               USB\VID_13D3&PID_3606&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_04CA&PID_3804&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_A1_1,               USB\VID_0489&PID_E0E4&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_04CA&PID_3806&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_1,               USB\VID_13D3&PID_3594&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_A1_2,               USB\VID_0489&PID_E102&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_2,               USB\VID_04CA&PID_38E4&MI_00
+%Generic.DeviceDesc%            = MTKBT_A1_2,               USB\VID_13D3&PID_3605&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3563&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3578&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3579&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_13D3&PID_3596&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_1,               USB\VID_15A9&PID_0047&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3568&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3569&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_13D3&PID_3575&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_13D3&PID_3584&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_13D3&PID_3585&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_2,               USB\VID_0489&PID_E0E2&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_0489&PID_E0F5&MI_00
+%Generic.DeviceDesc%            = MTKBT_A2_3,               USB\VID_0489&PID_E0F6&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_1,               USB\VID_13D3&PID_3583&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_2,               USB\VID_13D3&PID_3580&MI_00
+%Generic.DeviceDesc%            = MTKBT_A3_2,               USB\VID_13D3&PID_3597&MI_00
+%Generic.DeviceDesc%            = MTKBT_D1_1,               USB\VID_0489&PID_E0C8&MI_00
+%Generic.DeviceDesc%            = MTKBT_D1_1,               USB\VID_0489&PID_E0F1&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_H1_1,               USB\VID_0489&PID_E0E6&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_0E8D&PID_1EDE&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_13D3&PID_3567&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_1,               USB\VID_0489&PID_E0E0&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0489&PID_E0F2&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0E8D&PID_223C&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_0489&PID_E10B&MI_00
+%Generic.DeviceDesc%            = MTKBT_H2_2,               USB\VID_13D3&PID_3576&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_H3_1,               USB\VID_0489&PID_E0E5&MI_00
+%Generic.DeviceDesc%            = MTKBT_L1_1,               USB\VID_04CA&PID_3812&MI_00
+%Generic.DeviceDesc%            = MTKBT_L1_1,               USB\VID_0489&PID_E0CD&MI_00
+%Generic.DeviceDescRZ608%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D7&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D8&MI_00
+%Generic.DeviceDescRZ616%       = MTKBT_L1_1,               USB\VID_0489&PID_E0D9&MI_00
+%Generic.DeviceDesc%            = MTKBT_X1_1,               USB\VID_13D3&PID_3564&MI_00
+%Generic.DeviceDesc%            = MTKBT_T0_2,               USB\VID_1435&PID_7902&MI_00
+
+;****************************************************************************************
+[MTKBT_T0_2.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_T0_2.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_T0_3.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_T0_3.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A1_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A1_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A1_2.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A1_2.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A2_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A2_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A2_2.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A2_2.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A2_3.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A2_3.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A3_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A3_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_A3_2.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_A3_2.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_D1_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_D1_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_H1_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_H1_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_H2_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_H2_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_H2_2.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_H2_2.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_H3_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_H3_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_L1_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_L1_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+[MTKBT_X1_1.NTx86]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.CopyFiles
+
+[MTKBT_X1_1.NTamd64]
+include    = bth.inf
+needs      = BthUsb.NT
+CopyFiles  = MTKBTFilter.NTamd64.CopyFiles
+
+;****************************************************************************************
+[MTKBT_T0_2.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_T0_2.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_T0_3.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_T0_3.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A1_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A1_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A1_2.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A1_2.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A2_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A2_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A2_2.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A2_2.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A2_3.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A2_3.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A3_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A3_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_A3_2.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_A3_2.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_D1_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_D1_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_H1_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_H1_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_H2_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_H2_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_H2_2.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_H2_2.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_H3_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_H3_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_L1_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_L1_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+[MTKBT_X1_1.NTx86.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilter.HW.AddReg
+
+[MTKBT_X1_1.NTamd64.HW]
+include    = bth.inf
+needs      = BthUsb.NT.HW
+needs      = BthLEExtendedAdvertisingOptIn.HW
+AddReg     = MTKBTFilterx64.HW.AddReg
+
+;****************************************************************************************
+[MTKBT_T0_2.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_T0_2
+
+[MTKBT_T0_2.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_T0_2.NTamd64
+
+[MTKBT_T0_3.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_T0_3
+
+[MTKBT_T0_3.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_T0_3.NTamd64
+
+[MTKBT_A1_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A1_1
+
+[MTKBT_A1_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A1_1.NTamd64
+
+[MTKBT_A1_2.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A1_2
+
+[MTKBT_A1_2.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A1_2.NTamd64
+
+[MTKBT_A2_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A2_1
+
+[MTKBT_A2_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A2_1.NTamd64
+
+[MTKBT_A2_2.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A2_2
+
+[MTKBT_A2_2.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A2_2.NTamd64
+
+[MTKBT_A2_3.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A2_3
+
+[MTKBT_A2_3.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A2_3.NTamd64
+
+[MTKBT_A3_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A3_1
+
+[MTKBT_A3_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A3_1.NTamd64
+
+[MTKBT_A3_2.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_A3_2
+
+[MTKBT_A3_2.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_A3_2.NTamd64
+
+[MTKBT_D1_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_D1_1
+
+[MTKBT_D1_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_D1_1.NTamd64
+
+[MTKBT_H1_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_H1_1
+
+[MTKBT_H1_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_H1_1.NTamd64
+
+[MTKBT_H2_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_H2_1
+
+[MTKBT_H2_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_H2_1.NTamd64
+
+[MTKBT_H2_2.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_H2_2
+
+[MTKBT_H2_2.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_H2_2.NTamd64
+
+[MTKBT_H3_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_H3_1
+
+[MTKBT_H3_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_H3_1.NTamd64
+
+[MTKBT_L1_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_L1_1
+
+[MTKBT_L1_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_L1_1.NTamd64
+
+[MTKBT_X1_1.NTx86.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilter,,MTKBTFilterService_X1_1
+
+[MTKBT_X1_1.NTamd64.Services]
+include    = bth.inf
+needs      = BthUsb.NT.Services
+AddService = MTKBTFilterx64,,MTKBTFilterService_X1_1.NTamd64
+
+;****************************************************************************************
+[MTKBTFilter.HW.AddReg]
+HKR,,"LowerFilters",0x00010000,"MTKBTFilter"
+HKR,,"VsMsftOpCode",0x00010001,0xFD30
+
+[MTKBTFilterx64.HW.AddReg]
+HKR,,"LowerFilters",0x00010000,"MTKBTFilterX64"
+HKR,,"VsMsftOpCode",0x00010001,0xFD30
+
+;****************************************************************************************
+[MTKBTFilterService_T0_2]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_T0_2.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_T0_3]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_T0_3.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_A1_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A1_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A1_2]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_A1_2.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_A2_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A2_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A2_2]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_A2_2.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_A2_3]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_A2_3.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_A3_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A3_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A3_2]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_A3_2.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_D1_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, USB.AddReg
+
+[MTKBTFilterService_D1_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, USB.AddReg
+
+[MTKBTFilterService_H1_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_H1_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_H2_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, LED.AddReg
+
+[MTKBTFilterService_H2_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, LED.AddReg
+
+[MTKBTFilterService_H2_2]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, LED.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_H2_2.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, LED.AddReg, BTSIDEBAND.AddReg
+
+[MTKBTFilterService_H3_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_H3_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_L1_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_L1_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg, SSKU.AddReg
+
+[MTKBTFilterService_X1_1]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilter.sys
+AddReg         = MTKBTFilter.AddReg
+
+[MTKBTFilterService_X1_1.NTamd64]
+DisplayName    = %Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mtkbtfilterx.sys
+AddReg         = MTKBTFilter.AddReg
+
+;****************************************************************************************
+[MTKBTFilter.AddReg]
+HKR,Parameters,FirmwareBinFolder,0x00000,"\SystemRoot\System32\drivers\"
+HKR,Parameters,BtFilterWakeUpEnable,0x00010003,0
+HKR,Parameters,BtFilterDeviceDetection,0x00010003,0
+
+HKR,Parameters\mtkbt,FWVer,0x00000,"xxxxyyzzaabbcc"
+HKR,Parameters\mtkbt,LogPath,0x00000,"\SystemRoot\System32\LogFiles\MediaTek\"
+HKR,Parameters\mtkbt\snooplog,output,0x00010001,0
+HKR,Parameters\mtkbt\snooplog,save,0x00010001,0
+HKR,Parameters\mtkbt\snooplog,size,0x00010001,128
+HKR,Parameters\mtkbt\dbg,level,0x00010001,4
+HKR,Parameters\mtkbt\picus,level,0x00010001,0
+HKR,Parameters\mtkbt\picus,type,0x00010001,2
+HKR,Parameters\mtkbt\picus,size,0x00010001,64
+HKR,Parameters\mtkbt\coex,switch,0x00010001,0
+HKR,Parameters\mtkbt\coex,adv_interval,0x00010001,100
+HKR,Parameters\mtkbt\coex,pagescan_interval,0x00010001,640
+HKR,Parameters\mtkbt\coex,pagescan_type,0x00010001,1
+HKR,Parameters\mtkbt\power_table,device_mode,0x000B0001,0x0
+;HKLM,Software\Policies\Microsoft\Windows\SwiftPair,SwiftPairDefault,0x00010001,1
+
+;For customer branch out should notice the value of FileMax and MaxFileSize.
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, Start, 0x00010001, 0x0
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, BufferSize, 0x00010001, 0xa0
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, ClockType, 0x00010001, 0x1
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, FileMax, 0x00010001, 0x8
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, FileName, 0, "%%SystemRoot%%\System32\LogFiles\WMI\MTK\mtkbt.etl"
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, Guid, 0, "{BCC3D898-9C36-4D75-AC12-84924F2572FD}"
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, LogFileMode, 0x00010001, 0x2
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, MaxFileSize, 0x00010001, 0xc8
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, MaximumBuffers, 0x00010001, 0x28
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT, MinimumBuffers, 0x00010001, 0x2
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT\{BCC3D898-9C36-4D75-AC12-84924F2572FD}, Enabled, 0x00010001, 0x1
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT\{BCC3D898-9C36-4D75-AC12-84924F2572FD}, EnableLevel, 0x00010001, 0x5
+HKLM,SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\MTKBT\{BCC3D898-9C36-4D75-AC12-84924F2572FD}, EnableFlags, 0x00010001, 0x7fffffff
+
+[LED.AddReg]
+HKR,Parameters\mtkbt,LED,0x00010001,1
+
+[SSKU.AddReg]
+HKR,Parameters\mtkbt\region,switch,0x00010001,1
+
+[BTSIDEBAND.AddReg]
+HKR,Parameters\mtkbt,HFP_SideBand,0x00010001,1
+HKR,Parameters\mtkbt,A2DP_SideBand,0x00010001,1
+
+[USB.AddReg]
+HKR,Parameters\mtkbt,USB_switch,0x00010001,1
+HKR,Parameters\mtkbt,USB_standard,0x00010001,0
+
+;****************************************************************************************
+[MTKBTFilter.CopyFiles]
+mtkbtfilter.sys
+BT_RAM_CODE_MT7961_1_2_hdr.bin
+BT_RAM_CODE_MT7922_1_1_hdr.bin
+BT_RAM_CODE_MT7902_1_1_hdr.bin
+mtkbt0.dat
+
+[MTKBTFilter.NTamd64.CopyFiles]
+mtkbtfilterx.sys
+BT_RAM_CODE_MT7961_1_2_hdr.bin
+BT_RAM_CODE_MT7922_1_1_hdr.bin
+BT_RAM_CODE_MT7902_1_1_hdr.bin
+mtkbt0.dat
+
+;****************************************************************************************
+[DestinationDirs]
+MTKBTFilter.CopyFiles         = 12
+MTKBTFilter.NTamd64.CopyFiles = 12
+DefaultDestDir                = 11
+
+;****************************************************************************************
+[SourceDisksNames]
+1 = %DISK_NAME%,,,
+
+[SourceDisksNames.amd64]
+1 = %DISK_NAME%,,,
+
+;****************************************************************************************
+[SourceDisksFiles]
+mtkbtfilter.sys=1
+BT_RAM_CODE_MT7961_1_2_hdr.bin=1
+BT_RAM_CODE_MT7922_1_1_hdr.bin=1
+BT_RAM_CODE_MT7902_1_1_hdr.bin=1
+mtkbt0.dat=1
+
+[SourceDisksFiles.amd64]
+mtkbtfilterx.sys=1
+BT_RAM_CODE_MT7961_1_2_hdr.bin=1
+BT_RAM_CODE_MT7922_1_1_hdr.bin=1
+BT_RAM_CODE_MT7902_1_1_hdr.bin=1
+mtkbt0.dat=1
+
+;****************************************************************************************
+[Strings]
+ProviderName              = "Mediatek Inc."
+MTK                       = "Mediatek Inc."
+Generic.DeviceDesc        = "MediaTek Bluetooth Adapter"
+Generic.DeviceDescRZ608ES = "RZ608ES Bluetooth(R) Adapter"
+Generic.DeviceDescRZ608   = "RZ608 Bluetooth(R) Adapter"
+Generic.DeviceDescRZ616   = "RZ616 Bluetooth(R) Adapter"
+Generic.DeviceDescExA     = "MediaTek Bluetooth MT7921"
+
+Service.DispName          = "MTK BT Filter Driver"
+DISK_NAME                 = "MTK BT Filter Driver"
